@@ -1,6 +1,6 @@
 # Equinox Kernel Adiutor
 
-## Equinox Kernel Adiutor is a modified version of official Kernel Adiutor, which is originally developed by Willi Ye aka Grarak. All the credits goes to the original developer.
+## Equinox Kernel Adiutor is a modified version of official Kernel Adiutor, which is originally developed by Willi Ye aka Grarak. All the credits goes to the original developer. It is a fork of [Kernel Adiutor](https://github.com/SmartPack/SmartPack-Kernel-Manager).
 
 ## Download
 ### ! [Download latest build](https://github.com/equinox-kernel/Equinox-Kernel-Adiutor/blob/equinox/download/com.equinox.kerneladiutor.apk?raw=true) ! [All builds](https://github.com/equinox-kernel/Equinox-Kernel-Adiutor/releases) !
