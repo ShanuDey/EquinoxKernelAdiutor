@@ -1012,6 +1012,7 @@
     <string name="get_it">\n(Click here to Get It!)</string>
     <string name="update_check_failed">Failed to get latest version info! Please check your internet connection</string>
     <string name="up_to_date_message">Congrats! You are up-to-date</string>
+    <string name="documentsui_message">Please use an external \'File Manager\' to pick your file. Selecting files via the default \'DocumentsUI\' is not yet supported.</string>
 
     <!-- App Updater -->
     <string name="appupdater_json" translatable="false">https://raw.githubusercontent.com/EquinoxKernel/EquinoxKernelAdiutorReleases/master/download/App-update.json</string>
