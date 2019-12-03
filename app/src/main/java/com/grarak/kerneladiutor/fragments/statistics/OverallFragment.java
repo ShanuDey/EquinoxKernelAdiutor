@@ -31,6 +31,7 @@ import android.os.BatteryManager;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.SystemClock;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
@@ -75,6 +76,7 @@ public class OverallFragment extends RecyclerViewFragment {
     private GPUFreq mGPUFreq;
 
     private StatsView mGPUFreqStatsView;
+    private StatsView mUpTime;
     private TemperatureView mTemperature;
 
     private CardView mFreqBig;
@@ -115,6 +117,11 @@ public class OverallFragment extends RecyclerViewFragment {
         mTemperature.setFullSpan(mGPUFreqStatsView == null);
 
         items.add(mTemperature);
+
+        mUpTime = new StatsView();
+        mUpTime.setTitle(getString(R.string.device) + (" ") + getString(R.string.uptime));
+
+        items.add(mUpTime);
     }
 
     private void frequenciesInit(List<RecyclerViewItem> items) {
@@ -359,7 +366,10 @@ public class OverallFragment extends RecyclerViewFragment {
         }
         if (mTemperature != null) {
             mTemperature.setBattery(mBatteryRaw);
-	}
+        }
+        if (mUpTime != null) {
+            mUpTime.setStat(Utils.getDurationBreakdown(SystemClock.elapsedRealtime()));
+        }
     }
 
     private BroadcastReceiver mBatteryReceiver = new BroadcastReceiver() {
