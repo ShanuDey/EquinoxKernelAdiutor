@@ -474,7 +474,7 @@ public class BackupFragment extends RecyclerViewFragment {
         if (requestCode == 0 && resultCode == Activity.RESULT_OK && data != null) {
             Uri uri = data.getData();
             File file = new File(uri.getPath());
-            if (!file.getName().endsWith(".img")) {
+            if (!Utils.getExtension(file.getName()).equals("img")) {
                 Utils.toast(getString(R.string.wrong_extension, ".img"), getActivity());
                 return;
             }

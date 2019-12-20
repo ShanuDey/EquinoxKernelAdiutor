@@ -486,7 +486,7 @@ public class ProfileFragment extends RecyclerViewFragment {
         } else if (requestCode == 1) {
             Uri uri = data.getData();
             File file = new File(uri.getPath());
-            if (!file.getName().endsWith(".json")) {
+            if (!Utils.getExtension(file.getName()).equals("json")) {
                 Utils.toast(getString(R.string.wrong_extension, ".json"), getActivity());
                 return;
             }
