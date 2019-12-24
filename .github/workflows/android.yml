@@ -15,3 +15,12 @@ jobs:
         java-version: 1.8
     - name: Build with Gradle
       run: ./gradlew build
+    - name: Upload to Telegram
+      run: |
+        cd app/build/outputs/apk/debug/
+        DEBUG_APK=$(echo *.apk)
+        curl -s -X POST "https://api.telegram.org/bot${{ secrets.TELEGRAM_TOKEN }}/sendDocument" \
+          -F chat_id="${{ secrets.TELEGRAM_TO }}" \
+          -F document="@$DEBUG_APK" \
+          -F caption="Equinox Kernel Adiutor"
+        cd ../../../../../
