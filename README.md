@@ -1,4 +1,5 @@
-# Equinox Kernel Adiutor
+# Equinox Kernel Adiutor    
+![](https://github.com/ShanuDey/EquinoxKernelAdiutor/workflows/Android%20CI/badge.svg)
 
 ## Equinox Kernel Adiutor is a modified version of official Kernel Adiutor, which is originally developed by Willi Ye aka Grarak. All the credits goes to the original developer.
 
