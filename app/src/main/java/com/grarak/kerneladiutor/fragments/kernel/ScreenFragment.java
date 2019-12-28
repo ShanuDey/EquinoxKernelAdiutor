@@ -27,6 +27,7 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
+import com.equinox.kernelmanager.recyclerview.CustomImageView;
 import com.grarak.kerneladiutor.R;
 import com.grarak.kerneladiutor.fragments.ApplyOnBootFragment;
 import com.grarak.kerneladiutor.fragments.BaseFragment;
@@ -102,6 +103,8 @@ public class ScreenFragment extends RecyclerViewFragment {
 	if (mMisc.haskcalRed() || mMisc.haskcalGreen() || mMisc.haskcalBlue()) {
             kcalColorInit(items);
 	}
+
+	    showTestImage(items);
         screenColorInit(items);
         List<RecyclerViewItem> gammas = new ArrayList<>();
         if (Gamma.hasKGamma()) {
@@ -130,9 +133,20 @@ public class ScreenFragment extends RecyclerViewFragment {
         }
     }
 
+    private void showTestImage(List<RecyclerViewItem> items){
+        CardView cardView = new CardView(getActivity());
+        cardView.setTitle("Color Test Image");
+
+        CustomImageView screenTest = new CustomImageView();
+        cardView.addItem(screenTest);
+
+        items.add(cardView);
+    }
+
+
     private void kcalColorInit(List<RecyclerViewItem> items) {
-	CardView kcalCard = new CardView(getActivity());
-	kcalCard.setTitle(getString(R.string.screen_color));
+        CardView kcalCard = new CardView(getActivity());
+        kcalCard.setTitle(getString(R.string.screen_color));
 
         if (mMisc.haskcalRed()) {
             SeekBarView kcal = new SeekBarView();
