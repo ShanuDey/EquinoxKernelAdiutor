@@ -1092,7 +1092,7 @@
 
     <!-- About -->
     <string name="about_me" translatable="false">Equinox kernel Adiutor is a heavily modified version of official Kernel Adiutor, which is originally developed by Willi Ye aka Grarak. All the credits goes to the original developer.</string>
-    <string name="libraries_used">Libraries used</string>
+    <string name="credits">Credits</string>
     <string name="source_code">Source Code</string>
     <string name="source_code_summary">View source code at GitHub</string>
     <string name="change_logs">Change-logs</string>
@@ -1104,7 +1104,7 @@
     <string name="purchase_app">Donation App</string>
     <string name="paypal_donation">PayPal</string>
     <string name="auto_update_check">Auto Update Check</string>
-    <string name="auto_update_check_summary">Check for new versions of Equinox Kernel Adiutor on app launch</string>
+    <string name="auto_update_check_summary">Update check on app launch</string>
     <string name="licence">License</string>
     <string name="licence_message" translatable="false">Equinox Kernel Adiutor is a free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.\n\nEquinox Kernel Adiutor is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License along with Equinox Kernel Adiutor. If not, visit http://www.gnu.org/licenses/.</string>
     <string name="share_app">Share App</string>
