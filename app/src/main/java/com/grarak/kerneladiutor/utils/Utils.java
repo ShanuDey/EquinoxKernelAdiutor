@@ -536,6 +536,14 @@ public class Utils {
         return su == null ? new File(file).exists() : new RootFile(file, su).exists();
     }
 
+    public static String create(String text, String path) {
+        return RootUtils.runCommand("echo '" + text + "' > " + path);
+    }
+
+    public static String mount(String command, String source, String dest) {
+        return RootUtils.runCommand("mount " + command + " " + source + " " + dest);
+    }
+
     public static boolean isNetworkAvailable(Context context) {
         ConnectivityManager cm = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
         return (cm.getActiveNetworkInfo() != null) && cm.getActiveNetworkInfo().isConnectedOrConnecting();
@@ -605,5 +613,15 @@ public class Utils {
      */
     public static String getExtension(String string) {
         return android.webkit.MimeTypeMap.getFileExtensionFromUrl(string);
+    }
+
+    public static String prepareReboot() {
+        String prepareReboot = "am broadcast android.intent.action.ACTION_SHUTDOWN " + "&&" +
+                " sync " + "&&" +
+                " echo 3 > /proc/sys/vm/drop_caches " + "&&" +
+                " sync " + "&&" +
+                " sleep 3 " + "&&" +
+                " reboot";
+        return prepareReboot;
     }
 }
