@@ -35,7 +35,8 @@ import com.grarak.kerneladiutor.utils.root.RootUtils;
 
 public class Spectrum {
 
-    static boolean spectrumVendor = RootUtils.getProp("vendor.spectrum.support").equals("1");
+    static String spectrumSupport = RootUtils.getProp("vendor.spectrum.support");
+    static boolean spectrumVendor = spectrumSupport==null?false:spectrumSupport.equals("1");
 
     public static String getProfile() {
 	if (spectrumVendor) {
