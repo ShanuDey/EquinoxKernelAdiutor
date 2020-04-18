@@ -179,18 +179,9 @@ public class AboutFragment extends RecyclerViewFragment {
                 Dialog donate_to_me = new Dialog(getActivity());
                 donate_to_me.setIcon(R.mipmap.ic_launcher);
                 donate_to_me.setTitle(getString(R.string.donate_me));
-                if (Utils.isSPDonated(requireActivity())) {
-                    donate_to_me.setMessage(getString(R.string.donate_me_message));
-                    donate_to_me.setNeutralButton(getString(R.string.donate_nope), (dialogInterface, i) -> {
-                    });
-                } else {
-                    donate_to_me.setMessage(getString(R.string.donate_me_message) + getString(R.string.donate_me_playstore));
-                    donate_to_me.setNeutralButton(getString(R.string.purchase_app), (dialogInterface, i) -> {
-                        Utils.launchUrl("https://play.google.com/store/apps", getActivity());
-                    });
-                }
+                donate_to_me.setMessage(R.string.donate_me_message);
                 donate_to_me.setPositiveButton(getString(R.string.paypal_donation), (dialog1, id1) -> {
-                    Utils.launchUrl("https://www.paypal.me/", getActivity());
+                    Utils.launchUrl("https://www.paypal.me/ShanuDey", getActivity());
                 });
                 donate_to_me.show();
             }
@@ -221,7 +212,7 @@ public class AboutFragment extends RecyclerViewFragment {
         about.addItem(support);
         about.addItem(sourcecode);
         //about.addItem(changelogs);
-        //about.addItem(donatetome);
+        about.addItem(donatetome);
         about.addItem(share);
 
         items.add(about);
