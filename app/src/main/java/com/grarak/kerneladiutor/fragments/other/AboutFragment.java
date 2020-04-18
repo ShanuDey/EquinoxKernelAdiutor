@@ -148,7 +148,7 @@ public class AboutFragment extends RecyclerViewFragment {
                     Utils.toast(R.string.no_internet, getActivity());
                     return;
                 }
-                Utils.launchUrl("https://github.com/ShanuDey/Equinox-KA", requireActivity());
+                Utils.launchUrl("https://github.com/EquinoxKernel/Equinox-Kernel-Adiutor", requireActivity());
             }
         });
 
@@ -219,7 +219,7 @@ public class AboutFragment extends RecyclerViewFragment {
         about.addItem(updatecheck);
         about.addItem(autoUpdateCheck);
         about.addItem(support);
-        //about.addItem(sourcecode);
+        about.addItem(sourcecode);
         //about.addItem(changelogs);
         //about.addItem(donatetome);
         about.addItem(share);
