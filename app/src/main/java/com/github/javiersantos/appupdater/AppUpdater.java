@@ -19,7 +19,7 @@ import com.github.javiersantos.appupdater.enums.UpdateFrom;
 import com.github.javiersantos.appupdater.objects.GitHub;
 import com.github.javiersantos.appupdater.objects.Update;
 
-import com.grarak.kerneladiutor.R;
+import com.equinox.kernelmanager.R;
 
 public class AppUpdater implements IAppUpdater {
     private Context context;

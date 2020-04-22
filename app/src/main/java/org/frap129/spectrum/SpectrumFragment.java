@@ -26,15 +26,13 @@ import android.graphics.Color;
 
 import androidx.core.content.ContextCompat;
 
-import org.frap129.spectrum.Spectrum;
-
-import com.grarak.kerneladiutor.R;
-import com.grarak.kerneladiutor.fragments.DescriptionFragment;
-import com.grarak.kerneladiutor.fragments.RecyclerViewFragment;
-import com.grarak.kerneladiutor.utils.Prefs;
-import com.grarak.kerneladiutor.views.recyclerview.CardView;
-import com.grarak.kerneladiutor.views.recyclerview.DescriptionView;
-import com.grarak.kerneladiutor.views.recyclerview.RecyclerViewItem;
+import com.equinox.kernelmanager.R;
+import com.equinox.kernelmanager.fragments.DescriptionFragment;
+import com.equinox.kernelmanager.fragments.RecyclerViewFragment;
+import com.equinox.kernelmanager.utils.Prefs;
+import com.equinox.kernelmanager.views.recyclerview.CardView;
+import com.equinox.kernelmanager.views.recyclerview.DescriptionView;
+import com.equinox.kernelmanager.views.recyclerview.RecyclerViewItem;
 
 import java.util.List;
 

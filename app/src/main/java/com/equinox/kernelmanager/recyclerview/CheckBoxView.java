@@ -25,10 +25,10 @@ import android.app.Activity;
 import android.content.Context;
 import android.view.View;
 
-import com.grarak.kerneladiutor.R;
-import com.grarak.kerneladiutor.utils.kernel.wake.S2w;
-import com.grarak.kerneladiutor.views.dialog.Dialog;
-import com.grarak.kerneladiutor.views.recyclerview.ValueView;
+import com.equinox.kernelmanager.R;
+import com.equinox.kernelmanager.utils.kernel.wake.S2w;
+import com.equinox.kernelmanager.views.dialog.Dialog;
+import com.equinox.kernelmanager.views.recyclerview.ValueView;
 
 import java.util.ArrayList;
 import java.util.List;

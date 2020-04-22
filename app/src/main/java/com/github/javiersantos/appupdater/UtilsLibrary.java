@@ -24,8 +24,8 @@ import com.github.javiersantos.appupdater.objects.GitHub;
 import com.github.javiersantos.appupdater.objects.Update;
 import com.github.javiersantos.appupdater.objects.Version;
 
-import com.grarak.kerneladiutor.R;
-import com.grarak.kerneladiutor.utils.Utils;
+import com.equinox.kernelmanager.R;
+import com.equinox.kernelmanager.utils.Utils;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -360,7 +360,7 @@ class UtilsLibrary {
         intent.setFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
         Uri uriFile;
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
-            uriFile = FileProvider.getUriForFile(context, "com.grarak.kerneladiutor.provider", file);
+            uriFile = FileProvider.getUriForFile(context, "com.equinox.kernelmanager.provider", file);
         } else {
             uriFile = Uri.fromFile(file);
         }

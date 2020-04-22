@@ -24,9 +24,7 @@ package com.equinox.kernelmanager.utils;
 import android.os.Build;
 import android.os.Environment;
 
-import com.grarak.kerneladiutor.utils.Device;
-import com.grarak.kerneladiutor.utils.Utils;
-import com.grarak.kerneladiutor.utils.root.RootUtils;
+import com.equinox.kernelmanager.utils.root.RootUtils;
 
 import java.io.File;
 import java.io.FileDescriptor;

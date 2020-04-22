@@ -25,17 +25,15 @@ import android.app.TimePickerDialog;
 import android.text.InputType;
 import android.widget.TimePicker;
 
-import com.grarak.kerneladiutor.R;
-import com.grarak.kerneladiutor.fragments.ApplyOnBootFragment;
-import com.grarak.kerneladiutor.fragments.RecyclerViewFragment;
-import com.grarak.kerneladiutor.utils.Utils;
-import com.grarak.kerneladiutor.views.recyclerview.CardView;
-import com.grarak.kerneladiutor.views.recyclerview.DescriptionView;
-import com.grarak.kerneladiutor.views.recyclerview.GenericSelectView;
-import com.grarak.kerneladiutor.views.recyclerview.RecyclerViewItem;
-import com.grarak.kerneladiutor.views.recyclerview.SelectView;
-import com.grarak.kerneladiutor.views.recyclerview.SeekBarView;
-import com.grarak.kerneladiutor.views.recyclerview.SwitchView;
+import com.equinox.kernelmanager.R;
+import com.equinox.kernelmanager.utils.Utils;
+import com.equinox.kernelmanager.views.recyclerview.CardView;
+import com.equinox.kernelmanager.views.recyclerview.DescriptionView;
+import com.equinox.kernelmanager.views.recyclerview.GenericSelectView;
+import com.equinox.kernelmanager.views.recyclerview.RecyclerViewItem;
+import com.equinox.kernelmanager.views.recyclerview.SelectView;
+import com.equinox.kernelmanager.views.recyclerview.SeekBarView;
+import com.equinox.kernelmanager.views.recyclerview.SwitchView;
 
 import com.equinox.kernelmanager.utils.KLapse;
 

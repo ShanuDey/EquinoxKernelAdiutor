@@ -25,11 +25,10 @@ import android.content.Context;
 
 import androidx.annotation.StringRes;
 
-import com.grarak.kerneladiutor.R;
-import com.grarak.kerneladiutor.fragments.ApplyOnBootFragment;
-import com.grarak.kerneladiutor.utils.Utils;
-import com.grarak.kerneladiutor.utils.root.Control;
-import com.grarak.kerneladiutor.utils.root.RootUtils;
+import com.equinox.kernelmanager.R;
+import com.equinox.kernelmanager.fragments.ApplyOnBootFragment;
+import com.equinox.kernelmanager.utils.root.Control;
+import com.equinox.kernelmanager.utils.root.RootUtils;
 
 import java.util.ArrayList;
 import java.util.Collections;

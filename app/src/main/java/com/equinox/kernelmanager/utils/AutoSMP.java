@@ -22,9 +22,8 @@ package com.equinox.kernelmanager.utils;
 
 import android.content.Context;
 
-import com.grarak.kerneladiutor.fragments.ApplyOnBootFragment;
-import com.grarak.kerneladiutor.utils.Utils;
-import com.grarak.kerneladiutor.utils.root.Control;
+import com.equinox.kernelmanager.fragments.ApplyOnBootFragment;
+import com.equinox.kernelmanager.utils.root.Control;
 
 /**
  * Originally created by Willi on 09.05.16

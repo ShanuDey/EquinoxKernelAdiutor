@@ -22,10 +22,9 @@ package com.equinox.kernelmanager.utils;
 
 import android.content.Context;
 
-import com.grarak.kerneladiutor.R;
-import com.grarak.kerneladiutor.fragments.ApplyOnBootFragment;
-import com.grarak.kerneladiutor.utils.Utils;
-import com.grarak.kerneladiutor.utils.root.Control;
+import com.equinox.kernelmanager.R;
+import com.equinox.kernelmanager.fragments.ApplyOnBootFragment;
+import com.equinox.kernelmanager.utils.root.Control;
 
 import java.util.ArrayList;
 import java.util.List;

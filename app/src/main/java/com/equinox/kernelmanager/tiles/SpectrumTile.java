@@ -27,9 +27,9 @@ import android.os.Build;
 import android.service.quicksettings.Tile;
 import android.service.quicksettings.TileService;
 
-import com.grarak.kerneladiutor.R;
-import com.grarak.kerneladiutor.utils.Prefs;
-import com.grarak.kerneladiutor.utils.Utils;
+import com.equinox.kernelmanager.R;
+import com.equinox.kernelmanager.utils.Prefs;
+import com.equinox.kernelmanager.utils.Utils;
 
 import org.frap129.spectrum.Spectrum;
 

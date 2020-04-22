@@ -15,7 +15,7 @@ import androidx.appcompat.app.AlertDialog;
 
 import com.github.javiersantos.appupdater.enums.UpdateFrom;
 
-import com.grarak.kerneladiutor.R;
+import com.equinox.kernelmanager.R;
 
 import java.net.URL;
 

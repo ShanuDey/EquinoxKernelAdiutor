@@ -32,22 +32,19 @@ import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Environment;
-import android.os.RemoteException;
 import android.util.Log;
 
 import androidx.core.content.ContextCompat;
 import androidx.core.graphics.drawable.DrawableCompat;
 
-import com.grarak.kerneladiutor.R;
-import com.grarak.kerneladiutor.fragments.DescriptionFragment;
-import com.grarak.kerneladiutor.fragments.RecyclerViewFragment;
-import com.grarak.kerneladiutor.utils.Utils;
-import com.grarak.kerneladiutor.utils.ViewUtils;
-import com.grarak.kerneladiutor.utils.root.RootUtils;
-import com.grarak.kerneladiutor.views.dialog.Dialog;
-import com.grarak.kerneladiutor.views.recyclerview.CardView;
-import com.grarak.kerneladiutor.views.recyclerview.DescriptionView;
-import com.grarak.kerneladiutor.views.recyclerview.RecyclerViewItem;
+import com.equinox.kernelmanager.R;
+import com.equinox.kernelmanager.utils.Utils;
+import com.equinox.kernelmanager.utils.ViewUtils;
+import com.equinox.kernelmanager.utils.root.RootUtils;
+import com.equinox.kernelmanager.views.dialog.Dialog;
+import com.equinox.kernelmanager.views.recyclerview.CardView;
+import com.equinox.kernelmanager.views.recyclerview.DescriptionView;
+import com.equinox.kernelmanager.views.recyclerview.RecyclerViewItem;
 
 import com.equinox.kernelmanager.utils.SmartPack;
 
@@ -372,7 +369,7 @@ public class SmartPackFragment extends RecyclerViewFragment {
                     reboot.setMessage(getString(R.string.reboot_message));
                     reboot.setNeutralButton(getString(R.string.reboot_later), (dialogInterface, i) -> {
                         new Execute().execute("rm -rf /data/data/com.smartpack.kernelmanager/");
-                        new Execute().execute("pm clear com.smartpack.kernelmanager && am start -n com.smartpack.kernelmanager/com.grarak.kerneladiutor.activities.MainActivity");
+                        new Execute().execute("pm clear com.smartpack.kernelmanager && am start -n com.smartpack.kernelmanager/MainActivity");
                     });
                     reboot.setPositiveButton(getString(R.string.reboot_now), (dialog2, id2) -> {
                         new Execute().execute("rm -rf /data/data/com.smartpack.kernelmanager/");

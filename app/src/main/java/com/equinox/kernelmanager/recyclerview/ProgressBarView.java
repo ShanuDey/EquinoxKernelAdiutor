@@ -27,8 +27,8 @@ import androidx.appcompat.widget.AppCompatTextView;
 
 import com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar;
 
-import com.grarak.kerneladiutor.R;
-import com.grarak.kerneladiutor.views.recyclerview.RecyclerViewItem;
+import com.equinox.kernelmanager.R;
+import com.equinox.kernelmanager.views.recyclerview.RecyclerViewItem;
 
 /**
  * Created by sunilpaulmathew <sunil.kde@gmail.com> on December 01, 2018

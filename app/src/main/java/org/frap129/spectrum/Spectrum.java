@@ -23,7 +23,7 @@ package org.frap129.spectrum;
 
 import android.os.AsyncTask;
 
-import com.grarak.kerneladiutor.utils.root.RootUtils;
+import com.equinox.kernelmanager.utils.root.RootUtils;
 
 /*
  * Based on the original implementation of Spectrum Kernel Manager by frap129 <joe@frap129.org>

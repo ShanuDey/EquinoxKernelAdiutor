@@ -1,4 +1,4 @@
-package com.grarak.kerneladiutor;
+package com.equinox.kernelmanager;
 
 import org.junit.Test;
 

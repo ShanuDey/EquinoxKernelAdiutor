@@ -3,8 +3,8 @@ package com.equinox.kernelmanager.recyclerview;
 import android.view.View;
 import android.widget.ImageView;
 
-import com.grarak.kerneladiutor.R;
-import com.grarak.kerneladiutor.views.recyclerview.RecyclerViewItem;
+import com.equinox.kernelmanager.R;
+import com.equinox.kernelmanager.views.recyclerview.RecyclerViewItem;
 
 public class CustomImageView extends RecyclerViewItem {
     private ImageView imageView;
